@@ -1,1 +1,59 @@
 /* TODO: build .product-grid with CSS Grid to match the mockup */
+
+body{
+    margin:0;
+    background-color: #f7f7f8;
+    color: #1a1a1a;
+    font-family: Arial, sans-serif;
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 32px;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.img-placeholder{
+    height: 130px;
+    background-color: #b2c2e2;
+    border-radius: 10px;
+}
+
+.product-name{
+    margin: 0;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+.product-price{
+    margin: 0;
+    font-size: 700;
+    color: #1f2937;
+}
+
+.product-card button{
+    padding: 10px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.product-card button:hover{
+    background-color: #1f2937;
+}
+
+
+
